@@ -1,0 +1,28 @@
+{
+  "name": "个人实习简历作品集",
+  "version": 1,
+  "description": "参考小米 MiMo 极简科技风格的个人实习简历介绍网页模板",
+  "data": [
+    {
+      "id": "page-index",
+      "title": "Home",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1785503286000,
+      "devMetadata": {
+        "htmlSrc": "pages/index.html",
+        "interactions": []
+      },
+      "canvasData": {
+        "x": 0,
+        "y": 0,
+        "group": 0
+      }
+    }
+  ],
+  "config": {
+    "autoLayout": true,
+    "deviceType": "desktop",
+    "projectName": "个人实习简历作品集"
+  }
+}

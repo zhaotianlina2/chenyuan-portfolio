@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈予安 | 个人简历</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Kalam:wght@300;400;700&family=Ma+Shan+Zheng&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <style id="theme-vars">
+:root {
+  /* Brand Primary - 黑白手绘 */
+  --brand-primary: #000000;
+  --brand-primary-foreground: #FFFFFF;
+
+  /* Surfaces */
+  --brand-background: #FFFFFF;
+  --brand-background-rgb: 255, 255, 255;
+  --brand-foreground: #000000;
+  --brand-foreground-rgb: 0, 0, 0;
+  --brand-card: #FFFFFF;
+  --brand-card-foreground: #000000;
+  --brand-popover: #FFFFFF;
+  --brand-popover-foreground: #000000;
+
+  /* Muted / secondary */
+  --brand-muted: #FFFFFF;
+  --brand-muted-foreground: #333333;
+
+  /* Borders and rings */
+  --brand-border: #000000;
+  --brand-input: #000000;
+  --brand-ring: #000000;
+
+  /* Radius - restrained scale */
+  --brand-radius-sm: 2px;
+  --brand-radius-md: 4px;
+  --brand-radius-lg: 8px;
+  --brand-radius-xl: 16px;
+  --brand-radius-full: 9999px;
+
+  /* State colors */
+  --brand-state-success: #000000;
+  --brand-state-warning: #000000;
+  --brand-state-error: #000000;
+  --brand-state-info: #000000;
+
+  /* Typography - hand-drawn sketchy fonts */
+  --brand-font-sans: "Kalam", "Caveat", "Ma Shan Zheng", "ZCOOL KuaiLe", "PingFang SC", "Microsoft YaHei", cursive;
+  --brand-font-mono: "SF Mono", "Fira Code", monospace;
+
+  /* Shadows - compliant alpha for static tokens */
+  --brand-shadow-sm: 2px 2px 0 rgba(0, 0, 0, 0.05);
+  --brand-shadow-md: 3px 3px 0 rgba(0, 0, 0, 0.05);
+  --brand-shadow-lg: 5px 5px 0 rgba(0, 0, 0, 0.05);
+
+  /* Spacing */
+  --brand-section-gap: 120px;
+  --brand-section-gap-mobile: 80px;
+  --brand-container-max: 1100px;
+}
+
+.dark {
+  --brand-background: #000000;
+  --brand-background-rgb: 0, 0, 0;
+  --brand-foreground: #FFFFFF;
+  --brand-foreground-rgb: 255, 255, 255;
+  --brand-card: #000000;
+  --brand-card-foreground: #FFFFFF;
+  --brand-popover: #000000;
+  --brand-popover-foreground: #FFFFFF;
+  --brand-muted: #000000;
+  --brand-muted-foreground: #CCCCCC;
+  --brand-border: #FFFFFF;
+  --brand-input: #FFFFFF;
+  --brand-primary: #FFFFFF;
+  --brand-primary-foreground: #000000;
+}
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.1/dist/index.global.js"></script>
+    <script src="https://unpkg.com/lucide@1.8.0/dist/umd/lucide.min.js"></script>
+    <style type="text/tailwindcss">
+  @theme inline {
+    --color-background: var(--brand-background);
+    --color-foreground: var(--brand-foreground);
+    --color-card: var(--brand-card);
+    --color-card-foreground: var(--brand-card-foreground);
+    --color-popover: var(--brand-popover);
+    --color-popover-foreground: var(--brand-popover-foreground);
+    --color-primary: var(--brand-primary);
+    --color-primary-foreground: var(--brand-primary-foreground);
+    --color-muted: var(--brand-muted);
+    --color-muted-foreground: var(--brand-muted-foreground);
+    --color-border: var(--brand-border);
+    --color-input: var(--brand-input);
+    --color-ring: var(--brand-ring);
+    --radius-sm: var(--brand-radius-sm);
+    --radius-md: var(--brand-radius-md);
+    --radius-lg: var(--brand-radius-lg);
+    --radius-xl: var(--brand-radius-xl);
+  }
+  @layer base {
+    body { background: var(--brand-background); color: var(--brand-foreground); }
+    td, th { @apply break-words; word-break: break-all; word-break: auto-phrase; }
+    th { @apply whitespace-nowrap; }
+  }
+    </style>
+    <style id="semantic-token-fallback">
+      .bg-background { background-color: var(--brand-background); }
+      .text-background { color: var(--brand-background); }
+      .border-background { border-color: var(--brand-background); }
+      .ring-background { --tw-ring-color: var(--brand-background); }
+      .bg-foreground { background-color: var(--brand-foreground); }
+      .text-foreground { color: var(--brand-foreground); }
+      .border-foreground { border-color: var(--brand-foreground); }
+      .ring-foreground { --tw-ring-color: var(--brand-foreground); }
+      .bg-card { background-color: var(--brand-card); }
+      .text-card { color: var(--brand-card); }
+      .border-card { border-color: var(--brand-card); }
+      .ring-card { --tw-ring-color: var(--brand-card); }
+      .bg-card-foreground { background-color: var(--brand-card-foreground); }
+      .text-card-foreground { color: var(--brand-card-foreground); }
+      .border-card-foreground { border-color: var(--brand-card-foreground); }
+      .ring-card-foreground { --tw-ring-color: var(--brand-card-foreground); }
+      .bg-popover { background-color: var(--brand-popover); }
+      .text-popover { color: var(--brand-popover); }
+      .border-popover { border-color: var(--brand-popover); }
+      .ring-popover { --tw-ring-color: var(--brand-popover); }
+      .bg-popover-foreground { background-color: var(--brand-popover-foreground); }
+      .text-popover-foreground { color: var(--brand-popover-foreground); }
+      .border-popover-foreground { border-color: var(--brand-popover-foreground); }
+      .ring-popover-foreground { --tw-ring-color: var(--brand-popover-foreground); }
+      .bg-primary { background-color: var(--brand-primary); }
+      .text-primary { color: var(--brand-primary); }
+      .border-primary { border-color: var(--brand-primary); }
+      .ring-primary { --tw-ring-color: var(--brand-primary); }
+      .bg-primary-foreground { background-color: var(--brand-primary-foreground); }
+      .text-primary-foreground { color: var(--brand-primary-foreground); }
+      .border-primary-foreground { border-color: var(--brand-primary-foreground); }
+      .ring-primary-foreground { --tw-ring-color: var(--brand-primary-foreground); }
+      .bg-muted { background-color: var(--brand-muted); }
+      .text-muted { color: var(--brand-muted); }
+      .border-muted { border-color: var(--brand-muted); }
+      .ring-muted { --tw-ring-color: var(--brand-muted); }
+      .bg-muted-foreground { background-color: var(--brand-muted-foreground); }
+      .text-muted-foreground { color: var(--brand-muted-foreground); }
+      .border-muted-foreground { border-color: var(--brand-muted-foreground); }
+      .ring-muted-foreground { --tw-ring-color: var(--brand-muted-foreground); }
+      .bg-border { background-color: var(--brand-border); }
+      .text-border { color: var(--brand-border); }
+      .border-border { border-color: var(--brand-border); }
+      .ring-border { --tw-ring-color: var(--brand-border); }
+      .bg-input { background-color: var(--brand-input); }
+      .text-input { color: var(--brand-input); }
+      .border-input { border-color: var(--brand-input); }
+      .ring-input { --tw-ring-color: var(--brand-input); }
+      .bg-ring { background-color: var(--brand-ring); }
+      .text-ring { color: var(--brand-ring); }
+      .border-ring { border-color: var(--brand-ring); }
+      .ring-ring { --tw-ring-color: var(--brand-ring); }
+    </style>
+    <style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      [data-icon] {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        background-color: currentColor;
+      }
+    </style>
+</head>
+<body class="min-h-screen bg-background font-sans antialiased">
+    <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true">
+        <defs>
+            <filter id="rough-paper">
+                <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="5" result="noise" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" />
+            </filter>
+        </defs>
+    </svg>
+
+    <header class="fixed top-0 left-0 right-0 z-50 border-b-2 border-border bg-background/95 backdrop-blur">
+        <div class="container flex h-16 items-center justify-between">
+            <a href="#top" class="hand-name text-2xl text-foreground transform -rotate-2 hover:rotate-0 transition-transform">陈予安</a>
+            <nav class="hidden items-center gap-6 md:flex" aria-label="主导航">
+                <a href="#about" class="text-sm font-bold text-foreground transition-transform hover:-rotate-2">关于</a>
+                <a href="#projects" class="text-sm font-bold text-foreground transition-transform hover:rotate-2">项目</a>
+                <a href="#awards" class="text-sm font-bold text-foreground transition-transform hover:-rotate-2">奖项</a>
+                <a href="#skills" class="text-sm font-bold text-foreground transition-transform hover:rotate-2">技能</a>
+                <a href="#contact" class="text-sm font-bold text-foreground transition-transform hover:-rotate-2">联系</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="#contact" class="hidden sketchy-btn fill sm:inline-flex">联系我</a>
+                <button id="themeToggle" class="sketchy-btn px-3 py-2" aria-label="切换明暗主题">
+                    <i data-lucide="moon" class="theme-icon-moon h-4 w-4"></i>
+                    <i data-lucide="sun" class="theme-icon-sun h-4 w-4"></i>
+                </button>
+                <button id="menuBtn" class="inline-flex items-center justify-center p-2 text-foreground md:hidden" aria-label="打开菜单" aria-expanded="false" aria-controls="mobileMenu">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden border-t-2 border-border bg-background px-6 py-5 md:hidden">
+            <nav class="flex flex-col gap-4" aria-label="移动导航">
+                <a href="#about" class="text-base font-bold text-foreground">关于</a>
+                <a href="#projects" class="text-base font-bold text-foreground">项目</a>
+                <a href="#awards" class="text-base font-bold text-foreground">奖项</a>
+                <a href="#skills" class="text-base font-bold text-foreground">技能</a>
+                <a href="#contact" class="text-base font-bold text-foreground">联系</a>
+                <a href="#contact" class="mt-2 inline-flex justify-center sketchy-btn fill">联系我</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top" class="pt-16">
+        <!-- Hero: MiMo-style double-layer matrix with mouse-follow clip-path mask -->
+        <section id="hero" class="hero-scene relative h-screen min-h-[600px] w-full overflow-hidden" aria-label="首屏">
+            <svg class="pointer-events-none absolute inset-0 -z-10" width="0" height="0" aria-hidden="true">
+                <defs>
+                    <clipPath id="hero-clip" clipPathUnits="userSpaceOnUse">
+                        <ellipse id="hero-ellipse" cx="0" cy="0" rx="160" ry="160" />
+                    </clipPath>
+                </defs>
+            </svg>
+
+            <!-- Back layer: matrix + Chinese name -->
+            <div class="hero-layer hero-back" aria-hidden="true">
+                <div class="hero-matrix" id="heroMatrixBack"></div>
+                <div class="hero-watermark hand-name">陈予安</div>
+            </div>
+
+            <!-- Front layer: matrix + English content, clipped by mask -->
+            <div class="hero-layer hero-front" id="heroFront">
+                <div class="hero-matrix hero-matrix-front" id="heroMatrixFront"></div>
+                <div class="hero-intro">
+                    <p class="mb-4 text-sm font-bold tracking-[0.2em] uppercase text-foreground">Frontend / Product Design</p>
+                    <h1 class="hand-title mb-6 text-6xl font-bold tracking-tight text-foreground sm:text-7xl md:text-8xl lg:text-9xl cjk-balance">Yu'an Chen</h1>
+                    <p class="mx-auto max-w-xl text-xl leading-relaxed text-muted-foreground md:text-2xl">Turning complex ideas into simple, usable interfaces.</p>
+                </div>
+            </div>
+
+            <div class="hero-hint">
+                <span class="section-label">move cursor</span>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="py-16 md:py-24">
+            <div class="container">
+                <div class="reveal mb-12 md:mb-16">
+                    <span class="section-label">关于我</span>
+                    <h2 class="hand-title text-4xl font-bold tracking-tight text-foreground md:text-5xl cjk-balance">随手涂两笔</h2>
+                </div>
+                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <article class="reveal sketchy-border p-6 md:p-8 transform -rotate-1">
+                        <div class="mb-5 flex items-center gap-3">
+                            <div class="flex h-11 w-11 items-center justify-center border-2 border-foreground rounded-full transform rotate-3">
+                                <i data-lucide="graduation-cap" class="h-5 w-5"></i>
+                            </div>
+                            <span class="text-xs font-bold uppercase tracking-wider">Education</span>
+                        </div>
+                        <h3 class="mb-2 text-xl font-bold">XX 大学</h3>
+                        <p class="text-base text-muted-foreground">计算机科学与技术 · 本科 · 大三在读</p>
+                    </article>
+                    <article class="reveal reveal-delay-1 sketchy-border p-6 md:p-8 transform rotate-1">
+                        <div class="mb-5 flex items-center gap-3">
+                            <div class="flex h-11 w-11 items-center justify-center border-2 border-foreground rounded-full transform -rotate-3">
+                                <i data-lucide="briefcase" class="h-5 w-5"></i>
+                            </div>
+                            <span class="text-xs font-bold uppercase tracking-wider">Status</span>
+                        </div>
+                        <h3 class="mb-2 text-xl font-bold">正在找实习</h3>
+                        <p class="text-base text-muted-foreground">前端开发 / 产品设计 · 可实习 6 个月以上</p>
+                    </article>
+                    <article class="reveal reveal-delay-2 sketchy-border p-6 md:p-8 transform -rotate-1">
+                        <div class="mb-5 flex items-center gap-3">
+                            <div class="flex h-11 w-11 items-center justify-center border-2 border-foreground rounded-full transform rotate-3">
+                                <i data-lucide="map-pin" class="h-5 w-5"></i>
+                            </div>
+                            <span class="text-xs font-bold uppercase tracking-wider">Location</span>
+                        </div>
+                        <h3 class="mb-2 text-xl font-bold">Base 北京</h3>
+                        <p class="text-base text-muted-foreground">可远程 · 也可到司办公</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects with flip -->
+        <section id="projects" class="py-16 md:py-24">
+            <div class="container">
+                <div class="reveal mb-12 md:mb-16">
+                    <span class="section-label">项目</span>
+                    <h2 class="hand-title text-4xl font-bold tracking-tight text-foreground md:text-5xl cjk-balance">胡乱画的项目</h2>
+                    <p class="mt-4 max-w-2xl text-lg text-muted-foreground">悬停或点击卡片，翻过去看看背面。</p>
+                </div>
+                <div class="grid gap-6 md:grid-cols-2">
+                    <article class="flip-card reveal h-[330px] cursor-pointer transform -rotate-1" data-flip>
+                        <div class="flip-hint"><i data-lucide="rotate-cw" class="h-3 w-3"></i> 翻页</div>
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front p-6">
+                                <div class="mb-5 flex h-14 w-14 items-center justify-center border-2 border-foreground rounded-full transform rotate-6">
+                                    <i data-lucide="shopping-bag" class="h-7 w-7"></i>
+                                </div>
+                                <h3 class="mb-2 text-2xl font-bold">校园二手交易平台</h3>
+                                <p class="mb-4 text-base text-muted-foreground">Vue 3 + TypeScript 的 C2C 交易平台。</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="border border-foreground px-2 py-0.5 text-xs font-bold rounded">Vue 3</span>
+                                    <span class="border border-foreground px-2 py-0.5 text-xs font-bold rounded">TS</span>
+                                    <span class="border border-foreground px-2 py-0.5 text-xs font-bold rounded">Pinia</span>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3 class="mb-4 text-2xl font-bold">项目亮点</h3>
+                                <ul class="space-y-3 text-base text-muted-foreground">
+                                    <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0"></i> 封装 20+ 业务组件</li>
+                                    <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0"></i> WebSocket 实时消息</li>
+                                    <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0"></i> 信用评分与状态机</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="flip-card reveal reveal-delay-1 h-[330px] cursor-pointer transform rotate-1" data-flip>
+                        <div class="flip-hint"><i data-lucide="rotate-cw" class="h-3 w-3"></i> 翻页</div>
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front p-6">
+                                <div class="mb-5 flex h-14 w-14 items-center justify-center border-2 border-foreground rounded-full transform -rotate-6">
+                                    <i data-lucide="bot" class="h-7 w-7"></i>
+                                </div>
+                                <h3 class="mb-2 text-2xl font-bold">AI 学习助手小程序</h3>
+                                <p class="mb-4 text-base text-muted-foreground">面向大学生的 AI 问答与错题本。</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="border border-foreground px-2 py-0.5 text-xs font-bold rounded">React</span>
+                                    <span class="border border-foreground px-2 py-0.5 text-xs font-bold rounded">Taro</span>
+                                    <span class="border border-foreground px-2 py-0.5 text-xs font-bold rounded">Figma</span>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3 class="mb-4 text-2xl font-bold">项目亮点</h3>
+                                <ul class="space-y-3 text-base text-muted-foreground">
+                                    <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0"></i> 30+ 页面原型设计</li>
+                                    <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0"></i> AI 流式问答</li>
+                                    <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0"></i> 错题本标签体系</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="flip-card reveal h-[330px] cursor-pointer transform rotate-1" data-flip>
+                        <div class="flip-hint"><i data-lucide="rotate-cw" class="h-3 w-3"></i> 翻页</div>
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front p-6">
+                                <div class="mb-5 flex h-14 w-14 items-center justify-center border-2 border-foreground rounded-full transform rotate-6">
+                                    <i data-lucide="bar-chart-3" class="h-7 w-7"></i>
+                                </div>
+                                <h3 class="mb-2 text-2xl font-bold">数据可视化大屏</h3>
+                                <p class="mb-4 text-base text-muted-foreground">图书馆客流与借阅数据实时大屏。</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="border border-foreground px-2 py-0.5 text-xs font-bold rounded">ECharts</span>
+                                    <span class="border border-foreground px-2 py-0.5 text-xs font-bold rounded">React</span>
+                                    <span class="border border-foreground px-2 py-0.5 text-xs font-bold rounded">Tailwind</span>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3 class="mb-4 text-2xl font-bold">项目亮点</h3>
+                                <ul class="space-y-3 text-base text-muted-foreground">
+                                    <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0"></i> SSE 数据秒级刷新</li>
+                                    <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0"></i> 多图表联动下钻</li>
+                                    <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0"></i> 自适应 4K / 1080P</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="flip-card reveal reveal-delay-1 h-[330px] cursor-pointer transform -rotate-1" data-flip>
+                        <div class="flip-hint"><i data-lucide="rotate-cw" class="h-3 w-3"></i> 翻页</div>
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front p-6">
+                                <div class="mb-5 flex h-14 w-14 items-center justify-center border-2 border-foreground rounded-full transform -rotate-6">
+                                    <i data-lucide="globe" class="h-7 w-7"></i>
+                                </div>
+                                <h3 class="mb-2 text-2xl font-bold">个人作品集网站</h3>
+                                <p class="mb-4 text-base text-muted-foreground">就是这个页面，自己画自己。</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="border border-foreground px-2 py-0.5 text-xs font-bold rounded">HTML5</span>
+                                    <span class="border border-foreground px-2 py-0.5 text-xs font-bold rounded">CSS3</span>
+                                    <span class="border border-foreground px-2 py-0.5 text-xs font-bold rounded">JS</span>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3 class="mb-4 text-2xl font-bold">项目亮点</h3>
+                                <ul class="space-y-3 text-base text-muted-foreground">
+                                    <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0"></i> 手绘涂鸦风格</li>
+                                    <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0"></i> 3D 卡片翻页</li>
+                                    <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0"></i> 只用黑白两色</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards -->
+        <section id="awards" class="py-16 md:py-24">
+            <div class="container">
+                <div class="reveal mb-12 md:mb-16">
+                    <span class="section-label">奖项</span>
+                    <h2 class="hand-title text-4xl font-bold tracking-tight text-foreground md:text-5xl cjk-balance">随便得的奖</h2>
+                </div>
+                <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+                    <article class="reveal sketchy-border p-5 text-center transform -rotate-1">
+                        <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center border-2 border-foreground rounded-full transform rotate-6">
+                            <i data-lucide="trophy" class="h-6 w-6"></i>
+                        </div>
+                        <h3 class="mb-1 text-lg font-bold">计算机设计大赛</h3>
+                        <p class="text-sm text-muted-foreground">国家级二等奖 · 2024</p>
+                    </article>
+                    <article class="reveal reveal-delay-1 sketchy-border p-5 text-center transform rotate-1">
+                        <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center border-2 border-foreground rounded-full transform -rotate-6">
+                            <i data-lucide="lightbulb" class="h-6 w-6"></i>
+                        </div>
+                        <h3 class="mb-1 text-lg font-bold">“互联网 +”大赛</h3>
+                        <p class="text-sm text-muted-foreground">省级银奖 · 2024</p>
+                    </article>
+                    <article class="reveal reveal-delay-2 sketchy-border p-5 text-center transform -rotate-1">
+                        <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center border-2 border-foreground rounded-full transform rotate-6">
+                            <i data-lucide="award" class="h-6 w-6"></i>
+                        </div>
+                        <h3 class="mb-1 text-lg font-bold">优秀学生奖学金</h3>
+                        <p class="text-sm text-muted-foreground">校级一等奖 · 2024</p>
+                    </article>
+                    <article class="reveal reveal-delay-3 sketchy-border p-5 text-center transform rotate-1">
+                        <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center border-2 border-foreground rounded-full transform -rotate-6">
+                            <i data-lucide="code-2" class="h-6 w-6"></i>
+                        </div>
+                        <h3 class="mb-1 text-lg font-bold">蓝桥杯大赛</h3>
+                        <p class="text-sm text-muted-foreground">省赛三等奖 · 2023</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="py-16 md:py-24">
+            <div class="container">
+                <div class="reveal mb-12 md:mb-16">
+                    <span class="section-label">技能</span>
+                    <h2 class="hand-title text-4xl font-bold tracking-tight text-foreground md:text-5xl cjk-balance">会一点的东西</h2>
+                </div>
+                <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                    <article class="reveal sketchy-border p-6 transform -rotate-1">
+                        <div class="mb-4 flex h-11 w-11 items-center justify-center border-2 border-foreground rounded-xl transform rotate-3">
+                            <i data-lucide="code" class="h-5 w-5"></i>
+                        </div>
+                        <h3 class="mb-2 text-lg font-bold">前端框架</h3>
+                        <p class="text-base text-muted-foreground">React · Vue 3 · TypeScript</p>
+                    </article>
+                    <article class="reveal reveal-delay-1 sketchy-border p-6 transform rotate-1">
+                        <div class="mb-4 flex h-11 w-11 items-center justify-center border-2 border-foreground rounded-xl transform -rotate-3">
+                            <i data-lucide="palette" class="h-5 w-5"></i>
+                        </div>
+                        <h3 class="mb-2 text-lg font-bold">UI / UX</h3>
+                        <p class="text-base text-muted-foreground">Figma · Tailwind · 组件化</p>
+                    </article>
+                    <article class="reveal reveal-delay-2 sketchy-border p-6 transform -rotate-1">
+                        <div class="mb-4 flex h-11 w-11 items-center justify-center border-2 border-foreground rounded-xl transform rotate-3">
+                            <i data-lucide="git-branch" class="h-5 w-5"></i>
+                        </div>
+                        <h3 class="mb-2 text-lg font-bold">工程化</h3>
+                        <p class="text-base text-muted-foreground">Git · Vite · Webpack</p>
+                    </article>
+                    <article class="reveal reveal-delay-3 sketchy-border p-6 transform rotate-1">
+                        <div class="mb-4 flex h-11 w-11 items-center justify-center border-2 border-foreground rounded-xl transform -rotate-3">
+                            <i data-lucide="languages" class="h-5 w-5"></i>
+                        </div>
+                        <h3 class="mb-2 text-lg font-bold">语言</h3>
+                        <p class="text-base text-muted-foreground">中文 · 英语 CET-6</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech strip -->
+        <section class="border-y-2 border-border bg-background py-14 md:py-20">
+            <div class="container">
+                <p class="reveal mb-10 text-center text-sm font-bold tracking-[0.15em] text-muted-foreground uppercase">常用工具</p>
+                <div class="reveal tech-strip">
+                    <span class="tech-item"><i data-lucide="atom" class="h-4 w-4"></i> React</span>
+                    <span class="tech-item"><i data-lucide="layers" class="h-4 w-4"></i> Vue</span>
+                    <span class="tech-item"><i data-lucide="file-type" class="h-4 w-4"></i> TypeScript</span>
+                    <span class="tech-item"><i data-lucide="wind" class="h-4 w-4"></i> Tailwind</span>
+                    <span class="tech-item"><i data-lucide="figma" class="h-4 w-4"></i> Figma</span>
+                    <span class="tech-item"><i data-lucide="github" class="h-4 w-4"></i> GitHub</span>
+                    <span class="tech-item"><i data-lucide="box" class="h-4 w-4"></i> VS Code</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-16 md:py-24">
+            <div class="container">
+                <div class="reveal mb-12 md:mb-16">
+                    <span class="section-label">评价</span>
+                    <h2 class="hand-title text-4xl font-bold tracking-tight text-foreground md:text-5xl cjk-balance">别人怎么说</h2>
+                </div>
+                <div class="grid gap-6 md:grid-cols-2">
+                    <article class="reveal sketchy-border p-7 md:p-8 transform -rotate-1">
+                        <p class="mb-6 text-lg leading-relaxed text-card-foreground">"予安对细节的敏感度很高，能把设计稿还原得非常到位。"</p>
+                        <div class="flex items-center gap-3">
+                            <div class="flex h-10 w-10 items-center justify-center border-2 border-foreground rounded-full font-bold text-sm transform rotate-3">李</div>
+                            <div>
+                                <p class="text-base font-bold">李明远</p>
+                                <p class="text-sm text-muted-foreground">项目指导老师</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="reveal reveal-delay-1 sketchy-border p-7 md:p-8 transform rotate-1">
+                        <p class="mb-6 text-lg leading-relaxed text-card-foreground">"代码结构清晰，组件复用做得很好，是个靠谱的前端搭档。"</p>
+                        <div class="flex items-center gap-3">
+                            <div class="flex h-10 w-10 items-center justify-center border-2 border-foreground rounded-full font-bold text-sm transform -rotate-3">王</div>
+                            <div>
+                                <p class="text-base font-bold">王晓彤</p>
+                                <p class="text-sm text-muted-foreground">团队产品经理</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About statement -->
+        <section class="border-t-2 border-border bg-background py-16 md:py-24">
+            <div class="container">
+                <div class="reveal mx-auto max-w-2xl text-center">
+                    <span class="section-label">碎碎念</span>
+                    <h2 class="hand-title mb-6 text-4xl font-bold tracking-tight text-foreground md:text-5xl cjk-balance">相信技术连接人与价值</h2>
+                    <p class="text-lg leading-relaxed text-muted-foreground">我喜欢把复杂的需求拆解成清晰、可用的界面，也享受用代码把设计稿还原到像素的乐趣。希望加入一支注重产品细节与用户体验的团队，在前端开发或产品设计的岗位上继续画画写写。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="border-t-2 border-border bg-background py-16 md:py-20">
+        <div class="container">
+            <div class="reveal mb-12 flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
+                <div>
+                    <h2 class="hand-title mb-3 text-4xl font-bold text-foreground md:text-5xl cjk-balance">一起画点什么？</h2>
+                    <p class="text-lg text-muted-foreground">欢迎通过邮件或社交媒体联系我。</p>
+                </div>
+                <div class="flex flex-col gap-3 sm:flex-row">
+                    <a href="mailto:hello@chenyuan.dev" class="sketchy-btn fill">发邮件</a>
+                    <a href="#" class="sketchy-btn">下载简历</a>
+                </div>
+            </div>
+            <div class="reveal flex flex-col items-start justify-between gap-6 border-t-2 border-border pt-8 md:flex-row md:items-center">
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="https://github.com/chenyuan" target="_blank" rel="noopener noreferrer" class="sketchy-btn text-sm py-2 px-4"><i data-lucide="github" class="h-4 w-4"></i> GitHub</a>
+                    <a href="https://linkedin.com/in/chenyuan" target="_blank" rel="noopener noreferrer" class="sketchy-btn text-sm py-2 px-4"><i data-lucide="linkedin" class="h-4 w-4"></i> LinkedIn</a>
+                    <a href="mailto:hello@chenyuan.dev" class="sketchy-btn text-sm py-2 px-4"><i data-lucide="mail" class="h-4 w-4"></i> 邮箱</a>
+                </div>
+                <p class="text-sm font-bold text-muted-foreground">© 2025 陈予安 · 乱画出品</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            lucide.createIcons();
+
+            // Theme toggle
+            const themeToggle = document.getElementById('themeToggle');
+            const html = document.documentElement;
+            if (themeToggle) {
+                const saved = localStorage.getItem('theme');
+                if (saved === 'dark') {
+                    html.classList.remove('light');
+                    html.classList.add('dark');
+                }
+                themeToggle.addEventListener('click', function () {
+                    if (html.classList.contains('dark')) {
+                        html.classList.remove('dark');
+                        html.classList.add('light');
+                        localStorage.setItem('theme', 'light');
+                    } else {
+                        html.classList.remove('light');
+                        html.classList.add('dark');
+                        localStorage.setItem('theme', 'dark');
+                    }
+                    lucide.createIcons();
+                });
+            }
+
+            const menuBtn = document.getElementById('menuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', function () {
+                    const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+                    menuBtn.setAttribute('aria-expanded', String(!expanded));
+                    mobileMenu.classList.toggle('hidden');
+                });
+                mobileMenu.querySelectorAll('a').forEach(function (link) {
+                    link.addEventListener('click', function () {
+                        menuBtn.setAttribute('aria-expanded', 'false');
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+
+            document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+                anchor.addEventListener('click', function (e) {
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            const revealObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+            document.querySelectorAll('.reveal').forEach(function (el) { revealObserver.observe(el); });
+
+            // Flip cards
+            document.querySelectorAll('[data-flip]').forEach(function (card) {
+                card.addEventListener('click', function () { card.classList.toggle('flipped'); });
+                card.addEventListener('mouseenter', function () { card.classList.add('flipped'); });
+                card.addEventListener('mouseleave', function () { card.classList.remove('flipped'); });
+            });
+
+            // Hero matrix generation
+            function fillMatrix(el, text, count) {
+                if (!el) return;
+                let html = '';
+                for (let i = 0; i < count; i++) {
+                    html += '<span>' + text + '</span>';
+                }
+                el.innerHTML = html;
+            }
+            fillMatrix(document.getElementById('heroMatrixBack'), 'CODE', 72);
+            fillMatrix(document.getElementById('heroMatrixFront'), "YU'AN", 72);
+
+            // Hero mouse-follow clip-path mask with ellipse stretch
+            const hero = document.getElementById('hero');
+            const ellipse = document.getElementById('hero-ellipse');
+            if (hero && ellipse) {
+                let baseRadius = Math.min(window.innerWidth, window.innerHeight) * 0.16;
+                let targetX = window.innerWidth / 2;
+                let targetY = window.innerHeight / 2;
+                let currentX = targetX;
+                let currentY = targetY;
+                let currentStretch = 1;
+                let currentAngle = 0;
+                let isHovering = false;
+
+                function lerp(a, b, t) { return a + (b - a) * t; }
+
+                function updateMask() {
+                    const dx = targetX - currentX;
+                    const dy = targetY - currentY;
+                    const speed = Math.hypot(dx, dy);
+
+                    currentX = lerp(currentX, targetX, 0.12);
+                    currentY = lerp(currentY, targetY, 0.12);
+
+                    const targetStretch = isHovering ? Math.min(1 + speed * 0.018, 2.4) : 1;
+                    const targetAngle = speed > 0.8 ? Math.atan2(dy, dx) * (180 / Math.PI) : currentAngle;
+
+                    currentStretch = lerp(currentStretch, targetStretch, 0.1);
+                    currentAngle = lerp(currentAngle, targetAngle, 0.1);
+
+                    const compression = 1 / Math.max(currentStretch, 0.5);
+                    const radius = isHovering ? baseRadius : 0;
+                    ellipse.setAttribute('transform',
+                        'translate(' + currentX + ', ' + currentY + ') ' +
+                        'rotate(' + currentAngle + ') ' +
+                        'scale(' + currentStretch + ', ' + compression + ')'
+                    );
+                    ellipse.setAttribute('rx', radius);
+                    ellipse.setAttribute('ry', radius);
+
+                    requestAnimationFrame(updateMask);
+                }
+
+                hero.addEventListener('mouseenter', function () { isHovering = true; });
+                hero.addEventListener('mouseleave', function () { isHovering = false; });
+                hero.addEventListener('mousemove', function (e) {
+                    const rect = hero.getBoundingClientRect();
+                    targetX = e.clientX - rect.left;
+                    targetY = e.clientY - rect.top;
+                });
+                hero.addEventListener('touchmove', function (e) {
+                    if (e.touches.length > 0) {
+                        const rect = hero.getBoundingClientRect();
+                        targetX = e.touches[0].clientX - rect.left;
+                        targetY = e.touches[0].clientY - rect.top;
+                        isHovering = true;
+                    }
+                }, { passive: true });
+                hero.addEventListener('touchend', function () { isHovering = false; });
+
+                window.addEventListener('resize', function () {
+                    baseRadius = Math.min(window.innerWidth, window.innerHeight) * 0.16;
+                });
+
+                updateMask();
+            }
+        });
+    </script>
+
+    <style>
+      [data-icon] {
+        display: inline-flex; align-items: center; justify-content: center;
+        -webkit-mask-size: contain; mask-size: contain;
+        -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+        -webkit-mask-position: center; mask-position: center;
+        background-color: currentColor;
+      }
+      body { font-family: var(--brand-font-sans); font-weight: 400; letter-spacing: 0.02em; }
+      .container { width: 100%; max-width: var(--brand-container-max); margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem; }
+      @media (min-width: 768px) { .container { padding-left: 2rem; padding-right: 2rem; } }
+      .cjk-balance { text-wrap: balance; word-break: keep-all; }
+      html { scroll-behavior: smooth; }
+
+      /* Sketchy SVG filter for rough edges */
+      .sketchy {
+        filter: url(#rough-paper);
+      }
+      .sketchy-border {
+        border: 2px solid var(--brand-foreground);
+        border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+        box-shadow: 3px 3px 0 var(--brand-foreground);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+      .sketchy-border:hover {
+        transform: rotate(-1deg) translateY(-3px);
+        box-shadow: 5px 5px 0 var(--brand-foreground);
+      }
+      .sketchy-border:nth-child(even):hover { transform: rotate(1deg) translateY(-3px); }
+
+      .sketchy-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        border: 2px solid var(--brand-foreground);
+        border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+        padding: 0.7rem 1.6rem;
+        background: var(--brand-background);
+        color: var(--brand-foreground);
+        font-weight: 700;
+        box-shadow: 3px 3px 0 var(--brand-foreground);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        cursor: pointer;
+      }
+      .sketchy-btn:hover {
+        transform: rotate(-1.5deg) translateY(-2px);
+        box-shadow: 5px 5px 0 var(--brand-foreground);
+      }
+      .sketchy-btn.fill {
+        background: var(--brand-foreground);
+        color: var(--brand-background);
+      }
+      .sketchy-btn.fill:hover { background: var(--brand-foreground); }
+
+      .scribble-underline {
+        position: relative;
+        display: inline-block;
+      }
+      .scribble-underline::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -0.15em;
+        height: 3px;
+        background: var(--brand-foreground);
+        border-radius: 50% 40% 60% 50%;
+        transform: rotate(-1deg);
+        opacity: 0.85;
+      }
+
+      .hand-title {
+        font-family: "Caveat", "Ma Shan Zheng", cursive;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+      .hand-name {
+        font-family: "Ma Shan Zheng", "ZCOOL KuaiLe", "Caveat", cursive;
+        font-weight: 400;
+      }
+
+      /* Doodle frame for section titles */
+      .section-label {
+        display: inline-block;
+        border: 2px solid var(--brand-foreground);
+        border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+        padding: 0.25rem 0.9rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        transform: rotate(-2deg);
+        margin-bottom: 1rem;
+      }
+
+      /* Scroll reveal */
+      .reveal { opacity: 0; transform: translateY(2rem) rotate(1deg); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+      .reveal.visible { opacity: 1; transform: translateY(0) rotate(0); }
+      .reveal-delay-1 { transition-delay: 0.08s; }
+      .reveal-delay-2 { transition-delay: 0.16s; }
+      .reveal-delay-3 { transition-delay: 0.24s; }
+
+      /* Flip card sketchy */
+      .flip-card { perspective: 1200px; }
+      .flip-card-inner {
+        position: relative;
+        width: 100%; height: 100%;
+        transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        transform-style: preserve-3d;
+      }
+      .flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
+      .flip-card-front, .flip-card-back {
+        position: absolute; inset: 0;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        background: var(--brand-card);
+        border: 2px solid var(--brand-foreground);
+        border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+        box-shadow: 3px 3px 0 var(--brand-foreground);
+      }
+      .flip-card-back {
+        transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1.5rem;
+      }
+      .flip-hint {
+        position: absolute;
+        top: 0.8rem;
+        right: 0.8rem;
+        z-index: 20;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0.2rem 0.5rem;
+        border: 1.5px solid var(--brand-foreground);
+        border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+        background: var(--brand-background);
+        font-size: 0.65rem;
+        font-weight: 700;
+        opacity: 0;
+        transition: opacity 0.2s ease;
+        transform: rotate(-3deg);
+      }
+      .flip-card:hover .flip-hint { opacity: 1; }
+
+      /* Tech strip */
+      .tech-strip { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1.2rem 2rem; }
+      .tech-item {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.35rem 0.8rem;
+        border: 1.5px solid var(--brand-foreground);
+        border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+        color: var(--brand-foreground);
+        font-weight: 700;
+        transform: rotate(-1deg);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .tech-item:nth-child(even) { transform: rotate(1deg); }
+      .tech-item:hover { transform: rotate(0deg) translateY(-2px); box-shadow: 2px 2px 0 var(--brand-foreground); }
+
+      /* Hero doodles */
+      .hero-doodle {
+        position: absolute;
+        pointer-events: none;
+        opacity: 0.15;
+        stroke: var(--brand-foreground);
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+      }
+      .scribble-circle {
+        animation: wobble 8s ease-in-out infinite;
+      }
+      @keyframes wobble {
+        0%, 100% { transform: rotate(0deg) scale(1); }
+        50% { transform: rotate(3deg) scale(1.02); }
+      }
+
+      /* Theme toggle icons */
+      .theme-icon-moon { display: inline-block; }
+      .theme-icon-sun { display: none; }
+      .dark .theme-icon-moon { display: none; }
+      .dark .theme-icon-sun { display: inline-block; }
+
+      /* Hero double-layer matrix */
+      .hero-scene {
+        position: relative;
+        height: 100vh;
+        min-height: 600px;
+        width: 100%;
+        background: var(--brand-background);
+        cursor: crosshair;
+      }
+      .hero-layer {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .hero-back {
+        color: var(--brand-foreground);
+        opacity: 0.07;
+        z-index: 1;
+      }
+      .hero-front {
+        color: var(--brand-foreground);
+        background: var(--brand-background);
+        z-index: 2;
+        clip-path: url(#hero-clip);
+        will-change: clip-path;
+      }
+      .hero-matrix {
+        position: absolute;
+        inset: -15%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        gap: 2.5rem 3.5rem;
+        font-family: var(--brand-font-mono);
+        font-size: clamp(1.2rem, 3.2vw, 2.4rem);
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        user-select: none;
+        transform: perspective(1200px) rotateX(14deg) rotateY(-8deg) scale(1.15);
+      }
+      .hero-matrix-front {
+        opacity: 0.18;
+      }
+      .hero-watermark {
+        position: absolute;
+        font-size: clamp(5rem, 18vw, 14rem);
+        opacity: 0.5;
+        transform: rotate(-6deg);
+        white-space: nowrap;
+        pointer-events: none;
+      }
+      .hero-intro {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        padding: 2rem;
+      }
+      .hero-hint {
+        position: absolute;
+        bottom: 2.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 20;
+        pointer-events: none;
+        opacity: 0.7;
+      }
+      @media (max-width: 640px) {
+        .hero-matrix { gap: 1.5rem 2rem; transform: perspective(1000px) rotateX(10deg) rotateY(-4deg) scale(1.1); }
+        .hero-hint { bottom: 1.5rem; }
+      }
+
+      /* Page flip sketchy */
+      @media (prefers-reduced-motion: reduce) {
+        .flip-card-inner { transition: none; }
+        .reveal { transition: none; }
+      }
+    </style>
+</body>
+</html>

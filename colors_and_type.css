@@ -1,0 +1,68 @@
+:root {
+  /* Brand Primary - 黑白手绘 */
+  --brand-primary: #000000;
+  --brand-primary-foreground: #FFFFFF;
+
+  /* Surfaces */
+  --brand-background: #FFFFFF;
+  --brand-background-rgb: 255, 255, 255;
+  --brand-foreground: #000000;
+  --brand-foreground-rgb: 0, 0, 0;
+  --brand-card: #FFFFFF;
+  --brand-card-foreground: #000000;
+  --brand-popover: #FFFFFF;
+  --brand-popover-foreground: #000000;
+
+  /* Muted / secondary */
+  --brand-muted: #FFFFFF;
+  --brand-muted-foreground: #333333;
+
+  /* Borders and rings */
+  --brand-border: #000000;
+  --brand-input: #000000;
+  --brand-ring: #000000;
+
+  /* Radius - restrained scale */
+  --brand-radius-sm: 2px;
+  --brand-radius-md: 4px;
+  --brand-radius-lg: 8px;
+  --brand-radius-xl: 16px;
+  --brand-radius-full: 9999px;
+
+  /* State colors */
+  --brand-state-success: #000000;
+  --brand-state-warning: #000000;
+  --brand-state-error: #000000;
+  --brand-state-info: #000000;
+
+  /* Typography - hand-drawn sketchy fonts */
+  --brand-font-sans: "Kalam", "Caveat", "Ma Shan Zheng", "ZCOOL KuaiLe", "PingFang SC", "Microsoft YaHei", cursive;
+  --brand-font-mono: "SF Mono", "Fira Code", monospace;
+
+  /* Shadows - compliant alpha for static tokens */
+  --brand-shadow-sm: 2px 2px 0 rgba(0, 0, 0, 0.05);
+  --brand-shadow-md: 3px 3px 0 rgba(0, 0, 0, 0.05);
+  --brand-shadow-lg: 5px 5px 0 rgba(0, 0, 0, 0.05);
+
+  /* Spacing */
+  --brand-section-gap: 120px;
+  --brand-section-gap-mobile: 80px;
+  --brand-container-max: 1100px;
+}
+
+.dark {
+  --brand-background: #000000;
+  --brand-background-rgb: 0, 0, 0;
+  --brand-foreground: #FFFFFF;
+  --brand-foreground-rgb: 255, 255, 255;
+  --brand-card: #000000;
+  --brand-card-foreground: #FFFFFF;
+  --brand-popover: #000000;
+  --brand-popover-foreground: #FFFFFF;
+  --brand-muted: #000000;
+  --brand-muted-foreground: #CCCCCC;
+  --brand-border: #FFFFFF;
+  --brand-input: #FFFFFF;
+  --brand-primary: #FFFFFF;
+  --brand-primary-foreground: #000000;
+}
